@@ -1,0 +1,24 @@
+## How many uppercase words are there in the (Avar) ilocano Wikipedia?
+# The following command results in 47201 words
+grep -c '^[A-Z]' wiki.txt
+
+
+## How many 4-letter words?
+# The following command results in 47640 words
+grep -c '[a-zA-Z][[a-zA-Z][a-zA-Z][a-zA-Z]$' wiki.txt
+
+## Are there any words with no vowels?
+grep -v '[AEIOUaeiouüíúóíéåyY]' wiki.txt | wc #grep filter with lines that do not contain vowels this also returns white space
+# wc returns 1522 "words"
+
+## Find "1-syllable" words
+grep -i '^[^AEIOUaeiouüíúóíéåyY]*[AEIOUaeiouüíúóíéåyY][^aeiouAEIOUüíúóíéåyY]*$' wiki.txt #Returns strings with one vowel
+grep -c '^[^AEIOUaeiouüíúóíéåyY]*[AEIOUaeiouüíúóíéåyY][^aeiouAEIOUüíúóíéåyY]*$' wiki.txt #Returns the count of strings with one vowel in this case 79
+
+## Find 2-syllable words
+grep -i '^[^AEIOUaeiouüíúóíéåyY]*[AEIOUaeiouüíúóíéåyY][^AEIOUaeiouüíúóíéåyY]*[AEIOUaeiouüíúóíéåyY][^AEIOUaeiouüíúóíéåyY]*$' wiki.txt #Returns strings with two vowels
+grep -c '^[^AEIOUaeiouüíúóíéåyY]*[AEIOUaeiouüíúóíéåyY][^AEIOUaeiouüíúóíéåyY]*[AEIOUaeiouüíúóíéåyY][^AEIOUaeiouüíúóíéåyY]*$' wiki.txt #Returns the count of strings with two vowels, in this case 947
+
+##Exercises with sed
+sed 's/[AEIOUaeiouüíúóíéåyY].*/ /g' < wiki.words > sed.txt
+sort sed.txt | uniq -c > sedcount.txt
