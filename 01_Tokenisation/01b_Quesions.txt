@@ -1,0 +1,20 @@
+## How should you segment sentences with a semi-colon? As a single sentence or as two sentences? Should it depend on context?
+# Since semi-colons are meant to separate two independent clauses, the first instinct is to treat them as two sentences. However, separation should be context/genre dependent, because there could be situations where the relationship between the two clauses could be important to an analysis.
+
+## Should sentences with ellipsis... be treated as a single sentence or several sentences?
+# This is also context dependent. There are instances where an ellipsis might indicate a missing word in a quotation, but is meant to be read as one sentence such as: "Our speech... is filled with others' words, varying degrees of otherness or varying degrees of 'our-own-ness'." (Bakhtin, 1981). In this case the entire quotation should be segmented as a single sentence. However, a similar situation where an author is trying to mimic dialog: " I wanted to... Would it be okay if we met tomorrow?" In this case, the quotation could be split into two sentences. The first example might be something that one would find in academic writing or a textbook, where as the other is one you might find in a corpus of dialog or in a work of fiction. In this way, the genre could give us clues to the types of context that might influence the way we segment.
+
+## If there is an exclamation after the first word of the sentence should it be a separate sentence? How about if there is comma?
+#Again, there is no single right/wrong answer. It would depend on the genre of text and my purpose in segmenting the text. For instance, imagine I am segmenting plays and I found it important to treat exclamations that are directives (e.g. verbs) as sentences and discourse particles/markers as part of a sentence. Then for the the line: "Hark! What light through yonder window breaks." I would want to segment that into two sentences regardless of whether it is "Hark!" or "Hark," (although "Hark," is unlikely). In contrast, I would segment: "Oh! I always say too much or too little," as a single sentence. Thus, it matters for what purpose you are segmenting and the context of the text you are segmenting.
+
+## Can you think of some hard tasks for the segmenter?
+# I think deciding what to do with parenthetical statements and text separated by an em dash. There would likely be situations where you would want the parentheticals to be treated as part of a single sentence and other where you might not. The same is true for em dashes that separate several different independent clauses (e.g. historical, legal, and political academic prose).
+
+## Why should we split punctuation from the token it goes with?
+# Punctuation are treated as "words" or tokens. In an analysis that uses relative frequencies instances of "her" and "her." would be treated as different and, therefore, skew the analysis being performed. For that reason, punctuation are treated as separate tokens even if they are written without spaces in between.
+
+##Should abbreviations with space in them be written as a single token or two tokens.
+#Ideally, instances of things like 15,000 or 12:30 or c.2008 would be considered a single unit.
+
+##Should contractions and clitics be a single token or two (or more) tokens?
+#This is dependent on the type of analysis. In many cases of English, given the type of analysis I would perform, I would likely want to treat n't and 'm as separate words, but there are likely instances and languages where the decision of whether to consider them as separate tokens in unclear and ambiguous.
