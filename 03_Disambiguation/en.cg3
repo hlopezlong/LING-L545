@@ -1,0 +1,16 @@
+
+DELIMITERS = "." ;
+
+LIST DET = DET ;
+LIST NOUN = NOUN ;
+LIST ADP = ADP ;
+LIST AUX = AUX ;
+LIST PRON = PRON ;
+
+SECTION
+
+SELECT DET IF (1C NOUN) # Kept from previous although prob does not appl
+SELECT ADP IF (1C AUX) #select preposition if comes before an auxillary
+SELECT ADP IF (1C NOUN) #SELECT ADP IF FOLLOWED BY A NOUN
+SELECT PRON IF (-1 NOUN) #SELECT mispelling of you if a noun follows your
+
